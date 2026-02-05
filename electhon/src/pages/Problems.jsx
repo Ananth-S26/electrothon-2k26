@@ -3,45 +3,32 @@ import { useState } from "react";
 import PageWrapper from "../components/PageWrapper";
 import "../styles/problems.css";
 
-const hardwareProblems = [
-  {
-    title: "Smart Energy Meter with Tampering Detection System",
-    file: "/problem-statements/hardware/PS1_Smart_Energy_Meter.docx",
-  },
-  {
-    title: "Smart Hybrid Surge Detection and Backup Storage System",
-    file: "/problem-statements/hardware/PS2_Hybrid_Surge_Backup.docx",
-  },
-  {
-    title: "Battery Theft Detection in EV with Monitoring System",
-    file: "/problem-statements/hardware/PS3_EV_Battery_Theft.docx",
-  },
-  {
-    title: "Wireless Home Automation with Overload Protection",
-    file: "/problem-statements/hardware/PS4_Home_Automation.docx",
-  },
+const hardwareTitles = [
+  "Smart Energy Meter with Tampering Detection System",
+  "Smart Hybrid Surge Detection and Backup Storage System",
+  "Battery Theft Detection in EV with Monitoring System",
+  "Wireless Home Automation with Overload Protection",
 ];
 
-const softwareProblems = [
-  {
-    title: "ChargeSense – Smart EV Log Analysis Platform",
-    file: "/problem-statements/software/PS1_ChargeSense.docx",
-  },
-  {
-    title: "VisionForge – AI-Based CNC Inspection Software",
-    file: "/problem-statements/software/PS2_VisionForge.docx",
-  },
+const softwareTitles = [
+  "ChargeSense – Smart EV Log Analysis Platform",
+  "VisionForge – AI-Based CNC Inspection Software",
 ];
 
 export default function Problems() {
   const [openType, setOpenType] = useState(null);
 
-  const problems =
+  const titles =
     openType === "hardware"
-      ? hardwareProblems
+      ? hardwareTitles
       : openType === "software"
-      ? softwareProblems
+      ? softwareTitles
       : [];
+
+  const downloadFile =
+    openType === "hardware"
+      ? "/problem-statements/hardware/Hardware_Problem_Statements.docx"
+      : "/problem-statements/software/Software_Problem_Statements.docx";
 
   return (
     <PageWrapper>
@@ -64,7 +51,7 @@ export default function Problems() {
             onClick={() => setOpenType("hardware")}
           >
             <h3>Hardware</h3>
-            <p>Smart grids, renewable devices, energy systems.</p>
+            <p>Smart grids, renewable devices, automation systems.</p>
           </motion.div>
 
           <motion.div
@@ -73,7 +60,7 @@ export default function Problems() {
             onClick={() => setOpenType("software")}
           >
             <h3>Software</h3>
-            <p>AI, analytics, inspection & optimization platforms.</p>
+            <p>AI analytics, inspection platforms, data intelligence.</p>
           </motion.div>
         </div>
 
@@ -82,7 +69,7 @@ export default function Problems() {
           <div className="modal-overlay" onClick={() => setOpenType(null)}>
             <motion.div
               className="modal"
-              initial={{ scale: 0.8, opacity: 0 }}
+              initial={{ scale: 0.85, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               onClick={(e) => e.stopPropagation()}
             >
@@ -93,15 +80,16 @@ export default function Problems() {
               </h3>
 
               <ul className="ps-list">
-                {problems.map((ps, index) => (
+                {titles.map((title, index) => (
                   <li key={index}>
-                    <span>{ps.title}</span>
-                    <a href={ps.file} download>
-                      Download
-                    </a>
+                    <span>{title}</span>
                   </li>
                 ))}
               </ul>
+
+              <a className="download-all" href={downloadFile} download>
+                Download Full Problem Statements
+              </a>
 
               <button className="close-btn" onClick={() => setOpenType(null)}>
                 Close
