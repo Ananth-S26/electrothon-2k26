@@ -50,18 +50,31 @@ export default function About() {
             <div className="about-card ">
               <h3>Cash Prizes</h3>
               <p>
-                Exciting cash prizes await the top-performing teams.
+                Exciting cash prizes awaiting for top-performing teams.
               </p>
             </div>
 
             <div className="about-card">
-              <h3>In Association With </h3>
-              <p>
-                Datacorp<br />
-                TurnOn<br />
-                Zeon Electric
-              </p>
+            <h3>In Association With</h3>
+
+            <div className="sponsor-list">
+              <div className="sponsor-item">
+                <img src="/datacorp.png" alt="Datacorp" />
+                <span>Datacorp</span>
+              </div>
+
+              <div className="sponsor-item">
+                <img src="/turnon.png" alt="TurnOn" />
+                <span>TurnOn</span>
+              </div>
+
+              <div className="sponsor-item">
+                <img src="/zeon.png" alt="Zeon Electric" />
+                <span>Zeon Electric</span>
+              </div>
             </div>
+          </div>
+
           </div>
         </div>
       </section>

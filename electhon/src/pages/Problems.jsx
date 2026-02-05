@@ -4,15 +4,15 @@ import PageWrapper from "../components/PageWrapper";
 import "../styles/problems.css";
 
 const hardwareTitles = [
-  "Smart Energy Meter with Tampering Detection System",
-  "Smart Hybrid Surge Detection and Backup Storage System",
-  "Battery Theft Detection in EV with Monitoring System",
-  "Wireless Home Automation with Overload Protection",
+  "HS1: Smart Energy Meter with Tampering Detection System",
+  "HS2: Smart Hybrid Surge Detection and Backup Storage System",
+  "HS3: Battery Theft Detection in EV with Monitoring System",
+  "HS4: Wireless Home Automation with Overload Protection",
 ];
 
 const softwareTitles = [
-  "ChargeSense – Smart EV Log Analysis Platform",
-  "VisionForge – AI-Based CNC Inspection Software",
+  "SS1: ChargeSense – Smart EV Log Analysis Platform",
+  "SS2: VisionForge – AI-Based CNC Inspection Software",
 ];
 
 export default function Problems() {

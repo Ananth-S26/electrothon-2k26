@@ -106,4 +106,45 @@
       grid-template-columns: 1fr;
     }
   }
-  
+  .logo-img {
+    width: auto;
+    height: 20px; /* keeps aspect ratio */
+    align-items: center;
+  }
+  .aboutsponser{
+    padding: 10px;
+  }
+  /* Sponsors section */
+.sponsor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.sponsor-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.sponsor-item:hover {
+  background: rgba(255, 215, 150, 0.08);
+  transform: translateX(4px);
+}
+
+.sponsor-item img {
+  height: 26px;
+  width: auto;
+  filter: brightness(1.1);
+}
+
+.sponsor-item span {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: var(--white);
+}

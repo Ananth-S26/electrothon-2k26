@@ -199,18 +199,45 @@ export default function Register() {
           </div>
 
           {/* Idea */}
-          <div className="form-card">
-            <h3>IDEA DETAILS</h3>
+<div className="form-card">
+  <h3>IDEA DETAILS</h3>
 
-            <input
-              name="problemStatement"
-              placeholder="Problem Statement"
-              value={formData.problemStatement}
-              onChange={handleChange}
-            />
-            {errors.problemStatement && (
-              <span>{errors.problemStatement}</span>
-            )}
+  <select
+    name="problemStatement"
+    value={formData.problemStatement}
+    onChange={handleChange}
+  >
+    <option value="">Select Problem Statement</option>
+
+    <option value="SS1: ChargeSense – Smart EV Log Analysis Platform">
+      SS1: ChargeSense – Smart EV Log Analysis Platform
+    </option>
+
+    <option value="SS2: VisionForge – AI-Based CNC Inspection Software">
+      SS2: VisionForge – AI-Based CNC Inspection Software
+    </option>
+
+    <option value="HS1: Smart Energy Meter with Tampering Detection System">
+      HS1: Smart Energy Meter with Tampering Detection System
+    </option>
+
+    <option value="HS2: Smart Hybrid Surge Detection and Backup Storage System">
+      HS2: Smart Hybrid Surge Detection and Backup Storage System
+    </option>
+
+    <option value="HS3: Battery Theft Detection in EV with Monitoring System">
+      HS3: Battery Theft Detection in EV with Monitoring System
+    </option>
+
+    <option value="HS4: Wireless Home Automation with Overload Protection">
+      HS4: Wireless Home Automation with Overload Protection
+    </option>
+  </select>
+
+  {errors.problemStatement && (
+    <span className="error-text">{errors.problemStatement}</span>
+  )}
+
 
             <textarea
               name="abstract"

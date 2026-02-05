@@ -42,6 +42,29 @@
     color: var(--gold);
     margin-bottom: 22px;
   }
+  .form-card select {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 215, 150, 0.25);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 14px;
+  }
+  .form-card select::placeholder,
+  .form-card select option {
+    background: #0b0b0b;
+    color: rgba(255, 255, 255);
+  }
+  
+  .error-text {
+    color: #ff6b6b;
+    font-size: 13px;
+    margin-top: 6px;
+    display: block;
+  }
+  
   
   /* Inputs */
   .register-form input,
