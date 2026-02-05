@@ -27,8 +27,8 @@ export default function Problems() {
 
   const downloadFile =
     openType === "hardware"
-      ? "/problem-statements/hardware/Hardware_Problem_Statements.docx"
-      : "/problem-statements/software/Software_Problem_Statements.docx";
+      ? "/problem-statements/hardware/Hardware_Problem_Statements.pdf"
+      : "/problem-statements/software/Software_Problem_Statements.pdf";
 
   return (
     <PageWrapper>
