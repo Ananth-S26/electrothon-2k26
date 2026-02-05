@@ -59,15 +59,28 @@ export default function Contact() {
             <div className="contact-card">
               <h3>CONNECT WITH US</h3>
 
-              <p>
-                <strong>Email</strong>
-                <span>eeeasssociation@gmail.com</span>
-              </p>
+<p>
+  <strong>Email</strong>
+  <span>
+    <a href="mailto:electrothon2k26@gmail.com">
+      electrothon2k26@gmail.com
+    </a>
+  </span>
+</p>
 
-              <p>
-                <strong>Instagram</strong>
-                <span>eeeassociationinsta</span>
-              </p>
+<p>
+  <strong>Instagram</strong>
+  <span>
+    <a
+      href="https://www.instagram.com/kec.eee?igsh=MW95OGpvMGN2ZzZhcA=="
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      kec.eee
+    </a>
+  </span>
+</p>
+
             </div>
           </div>
         </div>

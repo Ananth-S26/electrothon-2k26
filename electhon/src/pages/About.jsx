@@ -19,10 +19,10 @@ export default function About() {
 
           <div className="about-grid">
             <div className="about-card">
-              <h3>About SustainX</h3>
+              <h3>About Electrothon 2k26</h3>
               <p>
-                SustainX is a national-level hackathon blending sustainability,
-                electrical innovation, and software survival.
+                An Inter department 24-hours Hackathon featuring both hardware and
+                software-based problem statements.
               </p>
             </div>
 
@@ -57,7 +57,7 @@ export default function About() {
             </div>
 
             <div className="about-card">
-              <h3>Sponsors</h3>
+              <h3>In Association with</h3>
               <p>
                 Datacorp<br />
                 TurnOn<br />
