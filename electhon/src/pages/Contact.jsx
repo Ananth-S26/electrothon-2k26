@@ -52,14 +52,13 @@ export default function Contact() {
               <h3>CONNECT WITH US</h3>
 
               <p>
-                <strong>Email</strong>
-                <span>eeeasssociation@gmail.com</span>
+                <strong>Instagram</strong>
+                <span><a href="https://www.instagram.com/kec.eee?igsh=MW95OGpvMGN2ZzZhcA==" target="_blank" rel="noopener norefferer">kec.eee</a></span>
               </p>
 
               <p>
-                <strong>Instagram</strong>
-                <span>eeeassociationinsta</span>
-              </p>
+                <strong>Email</strong>
+                <span><a href="mailto:electrothon2k26@gmail.com" >electrothon2k26@gmail.com</a></span>              </p>
             </div>
           </div>
         </div>

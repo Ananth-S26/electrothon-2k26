@@ -55,7 +55,7 @@ export default function About() {
             </div>
 
             <div className="about-card">
-              <h3>Sponsors</h3>
+              <h3>In Association With </h3>
               <p>
                 Datacorp<br />
                 TurnOn<br />

@@ -40,7 +40,9 @@
     );
     z-index: -2;
   }
-  
+  .contact a{
+    color: white;
+  }
   /* Content */
   .contact-content {
     position: relative;
