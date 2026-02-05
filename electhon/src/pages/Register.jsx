@@ -3,7 +3,7 @@ import PageWrapper from "../components/PageWrapper";
 import "../styles/register.css";
 
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbzrrvdM1votcYR5XWtBS8ucfkvnXCYGXve1DV03sfuJXj4x7613upPZly_G6MuJXVg/exec";
+  "https://script.google.com/macros/s/AKfycbyGTnY8bDKQeBnRSdRyrUBYr19acCDomooBWSBSG9sjEdt0kwp-sMmd0swnNxzBAIJN/exec";
 
 export default function Register() {
   const [formData, setFormData] = useState({
