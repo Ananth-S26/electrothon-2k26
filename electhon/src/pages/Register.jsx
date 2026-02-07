@@ -284,7 +284,7 @@ export default function Register() {
   </p>
 
   <a
-    href="https://chat.whatsapp.com/YOUR_GROUP_LINK"
+    href="https://chat.whatsapp.com/FZgECIkLwcF9Gfga2PhxEf"
     target="_blank"
     rel="noopener noreferrer"
     className="register-btn"
