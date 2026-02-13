@@ -254,12 +254,7 @@ export default function Register() {
               <option value="HS4: Wireless Home Automation with Overload Protection">
                 HS4: Wireless Home Automation with Overload Protection
               </option>
-              <option value="SS1: ChargeSense – Smart EV Log Analysis Platform">
-                SS1: ChargeSense – Smart EV Log Analysis Platform
-              </option>
-              <option value="SS2: VisionForge – AI-Based CNC Inspection Software">
-                SS2: VisionForge – AI-Based CNC Inspection Software
-              </option>
+              
             </select>
 
             {errors.problemStatement && (
@@ -274,6 +269,8 @@ export default function Register() {
               onChange={handleChange}
             />
             {errors.abstract && <span>{errors.abstract}</span>}
+            <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "14px" }}>
+            Please note that registrations for the software problem statements are now closed due to all slots being filled.  </p>
           </div>
               {/* WhatsApp Group Card */}
 <div className="form-card">
