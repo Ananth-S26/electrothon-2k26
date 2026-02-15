@@ -39,7 +39,7 @@ export default function Register() {
           Registrations are now closed as the deadline for submission has been reached.
         </p>
 
-        {/* Form (Disabled for display purpose) */}
+        {/* Form (Disabled for display purpose)*/}
         <form className="register-form disabled-form">
           
           <div className="form-card">
